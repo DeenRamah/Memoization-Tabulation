@@ -1,3 +1,5 @@
+//The Fibonacci sequence is a classic example for demonstrating memoization.
+//We’ll calculate Fibonacci numbers using memoization to avoid redundant computations.
 function fibonacci(n: number, memo:Map<number, number>= new Map()): number{
   if(memo.has(n)){
     return memo.get(n)!;
